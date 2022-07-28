@@ -15,6 +15,7 @@ for (i = 0; i < tables.length; i++) {
       headers[j].innerHTML = "<a href='#'>" + headers[j].innerText + "</a>";
     }
 
+    //Try to reverse the array when the array is already sorted, but not concluded
     if (!(thead = table.querySelector("thead")).classList.contains("reverse")) {
       thead.addEventListener("click", sortTableFunction(table));
       thead.classList.add("reverse");
